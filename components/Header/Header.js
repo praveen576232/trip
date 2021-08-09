@@ -2,7 +2,7 @@ import styles from "../../styles/Home.module.scss";
 import { HiMenuAlt4 } from "react-icons/hi";
 import { useState } from "react";
 import MenuBody from "../../components/MenuBody/MenuBody";
-import { GrFormClose } from "react-icons/gr";
+import { MdClose } from "react-icons/md";
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [previousmenuStage, setPreviousmenuStage] = useState(false);
@@ -16,7 +16,7 @@ function Header() {
     setMenuOpen(false);
   };
   return (
-    <header>
+    <header className={styles.myheader}>
       <div
         className={`is-flex p-4 pb-5 is-justify-content-center is-align-items-center	${
           menuOpen
@@ -30,7 +30,7 @@ function Header() {
           onClick={menuOnClick}
           className="has-text-weight-bold pl-3 is-flex is-align-items-center is-justify-content-center"
         >
-          {menuOpen ? <GrFormClose color="white" /> : <HiMenuAlt4  />}
+          {menuOpen ? <MdClose color="white"  /> : <HiMenuAlt4  />}
 
           <p
             className={`ml-2 has-text-weight-bold is-size-6 is-uppercase   ${

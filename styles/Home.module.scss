@@ -1,5 +1,14 @@
 @import "./Header";
 @import "./ImageComponent";
+.myheader{
+    position: sticky;
+  top: 0%;
+  z-index: 3000;
+  background-color: white;
+}
+.menuclose{
+    color:red !important;
+}
  .menuImageCard{
      position: absolute;
      top:20px;
