@@ -1,0 +1,24 @@
+.contact {
+    width: 300px ;
+    height: 300px;
+    border-radius: 8px ;
+  
+   
+}
+.contactBodyImage {
+    width:100vw;
+    height: 300px;
+    padding-top: 100px;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.contactBody {
+    width:100vw;
+    
+}
+@media screen and (max-width: 768px){
+.contactBodyImage {
+    padding-top: 40px; 
+}
+  }
